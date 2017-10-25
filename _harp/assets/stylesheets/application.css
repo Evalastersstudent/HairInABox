@@ -41,15 +41,12 @@ nav ul li a {
 }
 .grid .goud {
   height: 200px;
-  max-width: 100%;
 }
 .grid .zilver {
   height: 150px;
-  max-width: 100%;
 }
 .grid .brons {
   height: 100px;
-  max-width: 100%;
 }
 .grid-item img {
   width: 100%;
