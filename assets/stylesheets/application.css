@@ -5,7 +5,7 @@ body {
       text-align: center;
       font-weight: 300;
       color: rgba(50,50,50,1);
-      font-size: 0.9em;
+      font-size: 1em;
 }
 #banner_top_pagina{
       width: 100%;
@@ -28,7 +28,7 @@ nav ul li a {
 
 
 main {
-      width: 60%;
+      width: 50%;
       text-align: left;
       margin: 2.5% auto;
 }
@@ -37,7 +37,7 @@ h1 {
       margin: 5% 0% 1% 0%;
 }
 h2 {
-      font-size: 1.25em;
+      font-size: 1.5em;
       margin: 0% 0% 1% 0%;
 }
 p {
