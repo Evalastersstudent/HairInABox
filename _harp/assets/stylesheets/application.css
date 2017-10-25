@@ -38,7 +38,7 @@ nav ul li a {
 footer {
   margin: 2.5% auto;
   width: 100%;
-  border-top: 2.5px solid rgb(181,202,223);
+  border-top: 2.5px solid rgba(181,202,223,0.5);
 }
 footer img {
   max-width: 100%;
