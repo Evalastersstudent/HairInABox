@@ -49,13 +49,14 @@ p {
 
 footer {
   margin: 2.5% auto;
-  width: 80%;
+  width: 100%;
 }
 footer img {
   max-width: 100%;
   display: inline-block;
 }
 .grid {
+  max-width: 80%;
   margin: 1.5% auto;
 }
 .grid:after {
