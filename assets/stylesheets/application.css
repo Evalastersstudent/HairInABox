@@ -40,13 +40,13 @@ nav ul li a {
   margin: 1.5% auto;
 }
 .grid .goud {
-  width: 45%;
+  height: 100px;
 }
 .grid .zilver {
-  width: 27.5%;
+  height: 75px;
 }
 .grid .brons {
-  width: 20%;
+  height: 50px;
 }
 .grid-item img {
   width: 100%;
