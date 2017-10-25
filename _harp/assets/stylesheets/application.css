@@ -39,6 +39,9 @@ nav ul li a {
   width: 60%;
   margin: 1.5% auto;
 }
+.grid .grid-item {
+  display: inline;
+}
 .grid .goud {
   height: 200px;
 }
