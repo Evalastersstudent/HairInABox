@@ -40,7 +40,7 @@ nav ul li a {
   margin: 1.5% auto;
 }
 .grid .grid-item {
-  display: inline;
+  float: left;
 }
 .grid .goud {
   height: 200px;
