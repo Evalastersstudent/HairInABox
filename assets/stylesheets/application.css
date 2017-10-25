@@ -65,7 +65,7 @@ footer img {
 }
 .grid-item {
   float: left;
-  width: 100%;
+  width: auto;
   margin: 2.5%;
 }
 .grid .goud {
