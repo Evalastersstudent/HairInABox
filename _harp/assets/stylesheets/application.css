@@ -44,10 +44,24 @@ nav ul li a {
   display: block;
   clear: both;
 }
-.sponsorsgrid .element-item {
+.sponsorsgrid .element-item.goud {
+  position: relative;
+  width: 45%;
+  height: 45%;
+  margin: 2%;
+  display: inline-block;
+}
+.sponsorsgrid .element-item.zilver {
   position: relative;
   width: 27.5%;
   height: 27.5%;
+  margin: 2%;
+  display: inline-block;
+}
+.sponsorsgrid .element-item.brons {
+  position: relative;
+  width: 20%;
+  height: 20%;
   margin: 2%;
   display: inline-block;
 }
