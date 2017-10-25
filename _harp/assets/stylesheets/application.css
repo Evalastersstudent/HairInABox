@@ -4,6 +4,7 @@ body {
       text-align: center;
       font-weight: 300;
       color: rgba(50,50,50,1);
+      margin: 0;
 }
 header {
       width: 100%;
