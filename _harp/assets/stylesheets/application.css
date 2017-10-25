@@ -39,13 +39,13 @@ nav ul li a {
   width: 60%;
   margin: 1.5% auto;
 }
-.sponsorsgrid .element-item.goud {
+.grid .goud {
   width: 45%;
 }
-.sponsorsgrid .element-item.zilver {
+.grid .zilver {
   width: 27.5%;
 }
-.sponsorsgrid .element-item.brons {
+.grid .brons {
   width: 20%;
 }
 .element-item img {
