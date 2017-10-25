@@ -37,7 +37,7 @@ nav ul li a {
 
 
 .grid {
-  max-width: 1200px;
+  max-width: 80%;
   margin: 1.5% auto;
 }
 .grid:after {
@@ -47,7 +47,6 @@ nav ul li a {
 }
 .grid-item {
   float: left;
-  height: 100px;
   width: auto;
 }
 .grid .goud {
