@@ -70,13 +70,13 @@ footer img {
   margin: 2.5%;
 }
 .grid .goud {
-  height: 150px;
-}
-.grid .zilver {
   height: 125px;
 }
-.grid .brons {
+.grid .zilver {
   height: 100px;
+}
+.grid .brons {
+  height: 75px;
 }
 .grid-item img {
   max-width: 100%;
