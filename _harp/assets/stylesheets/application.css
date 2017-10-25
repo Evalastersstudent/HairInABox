@@ -35,39 +35,18 @@ nav ul li a {
 
 
 
-.sponsorsgrid {
+.grid {
   width: 60%;
   margin: 1.5% auto;
 }
-.sponsorsgrid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
 .sponsorsgrid .element-item.goud {
-  position: relative;
   width: 45%;
-  height: 45%;
-  margin: 2%;
-  display: inline-block;
 }
 .sponsorsgrid .element-item.zilver {
-  position: relative;
   width: 27.5%;
-  height: 27.5%;
-  margin: 2%;
-  display: inline-block;
 }
 .sponsorsgrid .element-item.brons {
-  position: relative;
   width: 20%;
-  height: 20%;
-  margin: 2%;
-  display: inline-block;
-}
-.element-item > * {
-  margin: 0;
-  padding: 0;
 }
 .element-item img {
   width: 100%;
