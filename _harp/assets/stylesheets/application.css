@@ -47,17 +47,17 @@ nav ul li a {
 }
 .grid-item {
   float: left;
-  width: 100px;
-  height: auto;
+  height: 100px;
+  width: auto;
 }
 .grid .goud {
-  width: 200px;
+  height: 200px;
 }
 .grid .zilver {
-  width: 150px;
+  height: 150px;
 }
 .grid .brons {
-  width: 100px;
+  height: 100px;
 }
 .grid-item img {
   max-width: 100%;
