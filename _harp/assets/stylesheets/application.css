@@ -5,8 +5,9 @@ body {
       font-weight: 300;
       color: rgba(50,50,50,1);
 }
-#banner_top_pagina{
+header {
       width: 100%;
+      background-image: image("assets/Fotos/facebook_banner.jpg");
 }
 h1 {
       margin: 1.5% auto;
