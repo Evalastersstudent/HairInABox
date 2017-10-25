@@ -13,21 +13,10 @@ h1 {
       font-size: 5em;
       line-height: 1em;
 }
-h2 {
-      margin: 1.5% auto;
-      font-size: 2em;
-      display: inline;
-}
 h1 a {
       text-decoration: none;
       color: rgba(50,50,50,1);
       font-weight: 300;
-}
-h2 a {
-      text-decoration: none;
-      color: rgba(50,50,50,1);
-      font-weight: 300;
-      text-transform: uppercase;
 }
 nav {
       margin: 1.5% auto 0% auto;
@@ -61,9 +50,6 @@ footer img {
   h1 {
         font-size: 3.5em;
   }
-  h2 {
-        font-size: 1.5em;
-  }
   nav {
         display: none;
         visibility: hidden;
@@ -72,8 +58,5 @@ footer img {
 @media screen and (max-width: 350px) {
   h1 {
         font-size: 2.5em;
-  }
-  h2 {
-        font-size: 1.25em;
   }
 }
