@@ -1,5 +1,7 @@
 function main() {
-      if ($('a[rel*="external"]').prop("target", "_blank"));
+      jQuery(document).ready(function() {
+          jQuery(".external-link").attr("target", "_blank");
+      });
 }
 
 window.onload = function() {
