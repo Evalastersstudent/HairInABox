@@ -4,7 +4,7 @@ function main() {
       });
 
       $(document).ready(function() {
-            $('#navigatie').localScroll({duration: 500});
+            $('#navigatie').localScroll({speed: 500});
       });
 }
 
