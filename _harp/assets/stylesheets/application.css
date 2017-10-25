@@ -5,6 +5,9 @@ body {
       font-weight: 300;
       color: rgba(50,50,50,1);
 }
+#banner_top_pagina{
+      width: 100%;
+}
 h1 {
       margin: 1.5% auto;
       font-size: 5em;
@@ -40,99 +43,8 @@ nav ul li a {
       text-decoration: none;
       color: rgba(50,50,50,1);
 }
-#fotonavigatie {
-  width: 60%;
-  margin: 0 auto;
-}
-.hovergrijs {
-  background-color: rgba(50,50,50,1);
-  width: 25%;
-  margin: 2.5%;
-  display: inline-block;
-  padding: 1%;
-  position: relative;
-}
-.hovergrijs2 {
-  background-color: rgba(50,50,50,1);
-  width: 90%;
-  margin: 2.5%;
-  display: inline-block;
-  padding: 1%;
-  position: relative;
-  height: 100px;
-}
-.hovergrijs2 div {
-  width: 100%;
-  height: 100%;
-}
-.hovergrijs2 div:hover {
-  background-color: rgba(255,255,255,0.15);
-}
-#fotonavigatie a {
-  color: rgba(255,255,255,1);
-  text-decoration: none;
-}
-#fotonavigatie a p{
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.5em;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-#fotonavigatie a img {
-  max-width: 100%;
-  opacity: 1;
-}
-#fotonavigatie a img:hover {
-  opacity: 0.25;
-}
 
 
-.fotografiegrid, .photoshopgrid, .designgrid, .websitegrid {
-  width: 70%;
-  margin: 1.5% auto;
-}
-.c4dgrid, .videosgrid {
-  width: 60%;
-  margin: 1.5% auto;
-}
-.fotografiegrid:after, .c4dgrid:after, .photoshopgrid:after, .designgrid:after, .websitegrid:after, .videosgrid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-.fotografiegrid .element-item, .photoshopgrid .element-item, .designgrid .element-item, .websitegrid .element-item {
-  position: relative;
-  width: 20%;
-  height: 20%;
-  margin: 2%;
-  display: inline-block;
-}
-.c4dgrid .element-item, .videosgrid .element-item {
-  position: relative;
-  width: 27.5%;
-  height: 27.5%;
-  margin: 2%;
-  display: inline-block;
-}
-.element-item > * {
-  margin: 0;
-  padding: 0;
-}
-.element-item img {
-  width: 100%;
-  background-size: cover;
-}
-
-#main404 p, #contactmain p {
-  margin: 5% auto;
-  font-size: 1.5em;
-  line-height: 1.25em;
-  width: 50%;
-}
 
 footer {
   margin: 1% auto 2.5% auto;
@@ -144,45 +56,8 @@ footer img {
 }
 
 
-@media screen and (max-width: 1100px) {
-  .videosgrid {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 950px) {
-  #fotonavigatie {
-    width: 75%;
-    margin: 0 auto;
-  }
-  .fotografiegrid .element-item, .photoshopgrid .element-item, .designgrid .element-item, .websitegrid .element-item {
-    width: 45%;
-    height: 45%;
-  }
-  .c4dgrid .element-item, .videosgrid .element-item {
-    width: 40%;
-    height: 40%;
-  }
-}
-@media screen and (max-width: 730px) {
-  #fotonavigatie a p{
-    font-size: 1.25em;
-    text-transform: capitalize;
-  }
-  .videosgrid {
-    width: 95%;
-  }
-}
+
 @media screen and (max-width: 530px) {
-  .hovergrijs {
-    width: 40%;
-    margin: 1.5%;
-    padding: 1%;
-  }
-  .hovergrijs2 {
-    width: 86%;
-    margin: 1.5%;
-    padding: 1%;
-  }
   h1 {
         font-size: 3.5em;
   }
@@ -193,39 +68,12 @@ footer img {
         display: none;
         visibility: hidden;
   }
-  .fotografiegrid, .photoshopgrid, .designgrid, .websitegrid {
-    width: 80%;
-  }
-  .c4dgrid {
-    width: 90%;
-  }
-  .videosgrid .element-item {
-    width: 95%;
-    height: 95%;
-  }
 }
 @media screen and (max-width: 350px) {
-  #fotonavigatie a p{
-    text-transform: uppercase;
-  }
-  .hovergrijs {
-    width: 95%;
-    margin: 1.5% 0%;
-    padding: 1%;
-  }
-  .hovergrijs2 {
-    width: 95%;
-    margin: 1.5% 0%;
-    padding: 1%;
-  }
   h1 {
         font-size: 2.5em;
   }
   h2 {
         font-size: 1.25em;
-  }
-  .c4dgrid .element-item, .fotografiegrid .element-item, .photoshopgrid .element-item, .designgrid .element-item, .websitegrid .element-item {
-    width: 95%;
-    height: 95%;
   }
 }
