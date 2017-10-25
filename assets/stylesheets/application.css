@@ -46,7 +46,7 @@ nav ul li a {
   clear: both;
 }
 .grid-item {
-  /*float: left;*/
+  float: left;
   width: auto;
 }
 .grid .goud {
