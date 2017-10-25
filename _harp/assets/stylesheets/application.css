@@ -35,6 +35,34 @@ nav ul li a {
 
 
 
+.sponsorsgrid {
+  width: 60%;
+  margin: 1.5% auto;
+}
+.sponsorsgrid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.sponsorsgrid .element-item {
+  position: relative;
+  width: 27.5%;
+  height: 27.5%;
+  margin: 2%;
+  display: inline-block;
+}
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+.element-item img {
+  width: 100%;
+  background-size: cover;
+}
+
+
+
+
 footer {
   margin: 1% auto 2.5% auto;
   width: 100%;
