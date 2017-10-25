@@ -48,16 +48,16 @@ nav ul li a {
 .grid-item {
   float: left;
   width: 100px;
-  height: 100px;
+  height: auto;
 }
 .grid .goud {
-  height: 200px;
+  width: 200px;
 }
 .grid .zilver {
-  height: 150px;
+  width: 150px;
 }
 .grid .brons {
-  height: 100px;
+  width: 100px;
 }
 .grid-item img {
   max-width: 100%;
