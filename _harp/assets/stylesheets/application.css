@@ -9,16 +9,6 @@ body {
 #banner_top_pagina{
       width: 100%;
 }
-h1 {
-      margin: 1.5% auto;
-      font-size: 5em;
-      line-height: 1em;
-}
-h1 a {
-      text-decoration: none;
-      color: rgba(50,50,50,1);
-      font-weight: 300;
-}
 nav {
       margin: 1.5% auto 0% auto;
       display: block;
@@ -40,6 +30,10 @@ main {
       width: 60%;
       text-align: left;
       margin: 2.5% auto;
+}
+h1 {
+      font-size: 2em;
+      margin: 1% 0%;
 }
 
 
@@ -79,25 +73,4 @@ footer img {
   max-width: 100%;
   max-height: 100%;
   background-size: cover;
-}
-
-
-
-
-
-
-
-@media screen and (max-width: 530px) {
-  h1 {
-        font-size: 3.5em;
-  }
-  nav {
-        display: none;
-        visibility: hidden;
-  }
-}
-@media screen and (max-width: 350px) {
-  h1 {
-        font-size: 2.5em;
-  }
 }
