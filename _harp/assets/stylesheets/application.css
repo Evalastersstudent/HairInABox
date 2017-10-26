@@ -37,8 +37,8 @@ h1 {
       font-size: 2em;
       margin: 5% 0% 1% 0%;
       border: 5px solid rgba(181,202,223,1);
-      width: auto;
-      padding-left: 2.5%;
+      width: 0;
+      padding: 2.5%;
 }
 h2 {
       font-size: 1.25em;
