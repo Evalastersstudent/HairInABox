@@ -12,14 +12,14 @@ body {
       width: 100%;
 }
 nav {
-      margin: 2.5% auto 0% auto;
+      margin: 1.5% auto 0% auto;
       display: block;
       visibility: visible;
 }
 nav ul li {
       list-style: none;
       display: inline-block;
-      padding: 1% 1.5%;
+      padding: 1%;
       border: 5px solid rgba(181,202,223,0);
 }
 nav ul li:hover {
