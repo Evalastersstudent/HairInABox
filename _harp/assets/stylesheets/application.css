@@ -51,8 +51,8 @@ p {
 
 
 footer {
-      border: 2.5px solid rgba(181,202,223,1);
-      margin: 2.5% auto;
+      border-top: 2.5px solid rgba(181,202,223,1);
+      margin: 5% auto 2.5% auto;
       width: 100%;
 }
 footer img {
