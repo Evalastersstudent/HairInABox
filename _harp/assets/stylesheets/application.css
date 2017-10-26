@@ -19,8 +19,8 @@ nav {
 nav ul li {
       list-style: none;
       display: inline-block;
-      margin: 0% 1.5%;
-      padding: 2.5%;
+      margin: 0% 0.5%;
+      padding: 1% 1.5%;
 }
 nav ul li:hover {
       border: 2.5px solid rgba(181,202,223,1);
