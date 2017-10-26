@@ -20,8 +20,10 @@ nav ul li {
       list-style: none;
       display: inline-block;
       padding: 1% 1.5%;
+      border: 5px solid rgba(181,202,223,0);
 }
 nav ul li:hover {
+      animation: hovernav 1s;
       border: 5px solid rgba(181,202,223,1);
 }
 nav ul li a {
