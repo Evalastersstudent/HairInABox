@@ -51,38 +51,39 @@ p {
 
 
 footer {
-  margin: 2.5% auto;
-  width: 100%;
+      border: 2.5px solid rgba(181,202,223,1);
+      margin: 2.5% auto;
+      width: 100%;
 }
 footer img {
-  max-width: 100%;
-  display: inline-block;
+      max-width: 100%;
+      display: inline-block;
 }
 .grid {
-  max-width: 80%;
-  margin: 1.5% auto;
+      max-width: 80%;
+      margin: 1.5% auto;
 }
 .grid:after {
-  content: '';
-  display: block;
-  clear: both;
+      content: '';
+      display: block;
+      clear: both;
 }
 .grid-item {
-  float: left;
-  width: auto;
-  margin: 2.5%;
+      float: left;
+      width: auto;
+      margin: 2.5%;
 }
 .grid .goud {
-  height: 125px;
+      height: 125px;
 }
 .grid .zilver {
-  height: 100px;
+      height: 100px;
 }
 .grid .brons {
-  height: 75px;
+      height: 75px;
 }
 .grid-item img {
-  max-width: 100%;
-  max-height: 100%;
-  background-size: cover;
+      max-width: 100%;
+      max-height: 100%;
+      background-size: cover;
 }
