@@ -52,7 +52,7 @@ p {
 
 footer {
       background-color: rgba(181,202,223,1);
-      margin: 2.5% auto;
+      margin: 2.5% auto 0% auto;
       padding: 2.5%;
       width: 100%;
 }
