@@ -64,6 +64,9 @@ footer {
       padding: 2.5%;
       width: 100%;
 }
+h2.titelfooter {
+      margin: 1% 0% 0% 0%;
+}
 footer img {
       max-width: 100%;
       display: inline-block;
