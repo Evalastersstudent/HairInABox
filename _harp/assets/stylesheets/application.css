@@ -19,11 +19,10 @@ nav {
 nav ul li {
       list-style: none;
       display: inline-block;
-      margin: 0% 0.5%;
       padding: 1% 1.5%;
 }
 nav ul li:hover {
-      border: 2.5px solid rgba(181,202,223,1);
+      border: 5px solid rgba(181,202,223,1);
 }
 nav ul li a {
       text-decoration: none;
