@@ -84,15 +84,13 @@ footer img {
       float: left;
       width: auto;
       margin: 2.5%;
+      height: 75px;
 }
 .grid .goud {
       height: 125px;
 }
 .grid .zilver {
       height: 100px;
-}
-.grid .brons {
-      height: 75px;
 }
 .grid-item img {
       max-width: 100%;
