@@ -55,17 +55,16 @@ h2 {
 p {
       margin: 1.5% 0% 2.5% 0%;
 }
-.kader {
+.contactform {
       width: 620px;
-      height: 350px;
+      height: 450px;
       margin: 25px auto;
       box-sizing: border-box;
       border: 1px solid black;
       overflow: hidden;
 }
-
 iframe {
-      margin: -300px 0 0 -50px;
+      margin: -320px 0 0 -50px;
 }
 
 
