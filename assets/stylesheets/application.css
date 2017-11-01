@@ -42,7 +42,7 @@ h1 {
       font-size: 2em;
       margin: 5% 0% 1% 0%;
       border: 5px solid rgba(181,202,223,1);
-      width: 50%;
+      width: auto;
       padding: 2.5%;
 }
 h1.eerstetitel {
