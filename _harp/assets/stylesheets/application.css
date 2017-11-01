@@ -10,7 +10,7 @@ body {
 }
 #banner_top_pagina{
       width: 100%;
-      background-image: url("assets/Fotos/facebook_banner.jpg");
+      background-image: url("../Fotos/facebook_banner.jpg");
 }
 nav {
       margin: 1% auto 0% auto;
