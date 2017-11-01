@@ -108,6 +108,7 @@ footer img {
       background-size: cover;
 }
 .contact img {
-      width: 25px;
+      width: 50px;
+      margin: 0% 2.5%;
       display: inline-block;
 }
