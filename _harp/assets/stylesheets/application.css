@@ -15,24 +15,109 @@ body {
   display: none;
   visibility: hidden;
 }
-nav {
+.banner_geen_letters {
+  display: none;
+  visibility: hidden;
+}
+#navigatie_grote_pagina {
       margin: 1% auto 0% auto;
       display: block;
       visibility: visible;
 }
-nav ul li {
+#navigatie_grote_pagina ul li {
       list-style: none;
       display: inline-block;
       padding: 1%;
       border: 5px solid rgba(181,202,223,0);
 }
-nav ul li:hover {
+#navigatie_grote_pagina ul li:hover {
       animation: hovernav 1s;
       border: 5px solid rgba(181,202,223,1);
 }
-nav ul li a {
+#navigatie_grote_pagina ul li a {
       text-decoration: none;
       color: rgba(50,50,50,1);
+}
+
+
+#navigatie_kleine_pagina {
+      display: none;
+      visibility: hidden;
+}
+#navigatie_kleine_pagina .menu {
+  cursor: pointer;
+  z-index: 150;
+  float: right;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 4.5% 10%;
+}
+#navigatie_kleine_pagina .menu .streepje {
+  background: rgba(255, 255, 255, 1);
+  transition: all 0.5s ease;
+  width: 27.5px;
+  height: 2px;
+  z-index: 175;
+}
+#navigatie_kleine_pagina .menu .bovenstestreepje, #navigatie_kleine_pagina .menu .onderstestreepje {
+  margin: 0 auto;
+}
+#navigatie_kleine_pagina .menu .middelstestreepje {
+  margin: 7.5px auto;
+}
+#navigatie_kleine_pagina .menu.open .bovenstestreepje {
+  transform: rotate(45deg);
+  margin: 10px 0px 0px 0px;
+  width: 35px;
+}
+#navigatie_kleine_pagina .menu.open .middelstestreepje {
+  opacity: 0;
+}
+#navigatie_kleine_pagina .menu.open .onderstestreepje {
+  transform: rotate(-45deg);
+  margin: -20px 0px 0px 0px;
+  width: 35px;
+}
+#navigatie_kleine_pagina .navkleinscherm {
+  z-index: 125;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 65px 7% 25px 0px;
+  width: 100%;
+  background: linear-gradient(to right, rgba(222,49,105,0.5), rgba(227,49,75,0.5));
+}
+#navigatie_kleine_pagina .navkleinscherm:hover {
+  background: linear-gradient(to right, rgba(222,49,105,1), rgba(227,49,75,1));
+}
+#navigatie_kleine_pagina .navkleinscherm:not(.open) {
+  visibility: hidden;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: slideOutRight;
+}
+#navigatie_kleine_pagina .navkleinscherm.open {
+  visibility: visible;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: slideInRight;
+}
+#navigatie_kleine_pagina .navkleinscherm li {
+  list-style-type: none;
+  padding: 10px 25px;
+  text-align: right;
+}
+#navigatie_kleine_pagina .navkleinscherm li a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  border-right: 2.5px solid transparent;
+  padding: 0px;
+  transition: border 0.5s, padding 0.5s;
+}
+#navigatie_kleine_pagina .navkleinscherm li a:hover {
+  border-right: 2.5px solid rgba(255,255,255,1);
+  padding: 5px 15px;
 }
 
 
@@ -124,7 +209,7 @@ footer img {
   }
 }
 @media only screen and (max-width: 1000px) {
-  nav ul li:hover {
+  #navigatie_grote_pagina ul li:hover {
         border: 3.5px solid rgba(181,202,223,1);
   }
   h1 {
@@ -159,12 +244,21 @@ footer img {
   }
 }
 @media only screen and (max-width: 500px) {
+  .banner_geen_letters {
+        display: block;
+        visibility: visible;
+  }
   .banner_grote_letters {
         display: none;
         visibility: hidden;
   }
-  nav ul li:hover {
-        border: 3.5px solid rgba(255,255,255,1);
+  #navigatie_grote_pagina {
+        display: none;
+        visibility: hidden;
+  }
+  #navigatie_kleine_pagina {
+        display: block;
+        visibility: visible;
   }
   h1 {
         font-size: 1.1em;
