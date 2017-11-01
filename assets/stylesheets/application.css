@@ -163,6 +163,12 @@ footer img {
         display: none;
         visibility: hidden;
   }
+  nav ul li:hover {
+        border: 3.5px solid rgba(255,255,255,1);
+  }
+  h1 {
+        font-size: 1.1em;
+  }
   p {
         margin: 1.5% 0% 2.5% 0%;
         font-size: 0.8em;
