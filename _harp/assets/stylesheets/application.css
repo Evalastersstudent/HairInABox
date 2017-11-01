@@ -28,7 +28,6 @@ nav ul li:hover {
 }
 nav ul li a {
       text-decoration: none;
-      font-size: 1.5em;
       color: rgba(50,50,50,1);
 }
 
@@ -72,7 +71,7 @@ iframe {
 footer {
       background-color: rgba(181,202,223,1);
       margin: 2.5% auto 0% auto;
-      padding: 2.5%;
+      padding: 2.5% 2.5% 1% 2.5%;
       width: 100%;
 }
 h2.titelfooter {
