@@ -138,12 +138,4 @@ footer img {
         margin: 1.5% 0% 2.5% 0%;
         font-size: 0.9em;
   }
-  .banner_kleine_pagina {
-    display: block;
-    visibility: visible;
-  }
-  .banner_grote_pagina {
-    display: none;
-    visibility: hidden;
-  }
 }
