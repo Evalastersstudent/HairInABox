@@ -124,6 +124,9 @@ footer img {
   }
 }
 @media only screen and (max-width: 1000px) {
+  nav ul li:hover {
+        border: 3.5px solid rgba(181,202,223,1);
+  }
   h1 {
         font-size: 1.5em;
         padding: 2%;
@@ -145,6 +148,18 @@ footer img {
     visibility: visible;
   }
   .banner_kleine_letters {
+    display: none;
+    visibility: hidden;
+  }
+  h1 {
+        font-size: 1.25em;
+  }
+  h2 {
+        font-size: 1em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .banner_grote_letters {
     display: none;
     visibility: hidden;
   }
