@@ -139,3 +139,13 @@ footer img {
         font-size: 0.9em;
   }
 }
+@media only screen and (max-width: 700px) {
+  .banner_grote_letters {
+    display: block;
+    visibility: visible;
+  }
+  .banner_kleine_letters {
+    display: none;
+    visibility: hidden;
+  }
+}
