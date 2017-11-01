@@ -123,6 +123,8 @@ footer img {
   h1 {
         font-size: 1.5em;
         padding: 2%;
+        margin: 3.5% 0% 1% 0%;
+        border: 3.5px solid rgba(181,202,223,1);
   }
   h2 {
         font-size: 1.1em;
