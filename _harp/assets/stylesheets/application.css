@@ -107,3 +107,7 @@ footer img {
       max-height: 100%;
       background-size: cover;
 }
+.contact img {
+      width: 25px;
+      display: inline-block;
+}
