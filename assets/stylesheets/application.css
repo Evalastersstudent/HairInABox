@@ -11,7 +11,7 @@ body {
 #banner_top_pagina{
       width: 100%;
       background-image: url("../Fotos/facebook_banner.jpg");
-      height: 100%;
+      max-height: 400px;
 }
 nav {
       margin: 1% auto 0% auto;
