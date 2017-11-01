@@ -47,6 +47,7 @@ h1 {
 }
 h1.eerstetitel {
       margin: 2.5% 0% 1% 0%;
+      display: inline-block;
 }
 h2 {
       font-size: 1.25em;
