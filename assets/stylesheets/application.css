@@ -86,10 +86,7 @@ body {
   right: 0;
   padding: 65px 7% 25px 0px;
   width: 100%;
-  background: linear-gradient(to right, rgba(222,49,105,0.5), rgba(227,49,75,0.5));
-}
-#navigatie_kleine_pagina .navkleinscherm:hover {
-  background: linear-gradient(to right, rgba(222,49,105,1), rgba(227,49,75,1));
+  background: linear-gradient(to right, rgba(181,202,223,0.5), rgba(181,202,223,1));
 }
 #navigatie_kleine_pagina .navkleinscherm:not(.open) {
   visibility: hidden;
@@ -118,6 +115,26 @@ body {
 #navigatie_kleine_pagina .navkleinscherm li a:hover {
   border-right: 2.5px solid rgba(255,255,255,1);
   padding: 5px 15px;
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0%);
+    visibility: visible;
+  }
+}
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(100%);
+    visibility: hidden;
+  }
 }
 
 
