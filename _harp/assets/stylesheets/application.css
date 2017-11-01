@@ -10,8 +10,10 @@ body {
 }
 #banner_top_pagina{
       width: 100%;
-      background-image: url("../Fotos/facebook_banner.jpg");
-      max-height: 400px;
+}
+.banner_kleine_pagina {
+  display: none;
+  visibility: hidden;
 }
 nav {
       margin: 1% auto 0% auto;
@@ -135,5 +137,13 @@ footer img {
   p {
         margin: 1.5% 0% 2.5% 0%;
         font-size: 0.9em;
+  }
+  .banner_kleine_pagina {
+    display: block;
+    visibility: visible;
+  }
+  .banner_grote_pagina {
+    display: none;
+    visibility: hidden;
   }
 }
