@@ -250,6 +250,18 @@ footer img {
         font-size: 0.9em;
   }
 }
+@media only screen and (max-width: 800px) {
+  .contactform {
+        width: 205px;
+        height: 150px;
+        margin: 0%;
+        box-sizing: border-box;
+        overflow: hidden;
+  }
+  iframe {
+        margin: -105px 0 0 -17.5px;
+  }
+}
 @media only screen and (max-width: 700px) {
   .banner_grote_letters {
         display: block;
