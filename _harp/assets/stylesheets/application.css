@@ -53,10 +53,10 @@ body {
       right: 0;
       margin: 4.5% 10%;
       border: solid 2px rgba(181,202,223,1);
-      padding: 2px;
+      padding: 5px;
 }
 #navigatie_kleine_pagina .menu .streepje {
-      background: rgba(255, 255, 255, 1);
+      background: rgba(181,202,223,1);
       transition: all 0.5s ease;
       width: 27.5px;
       height: 2px;
