@@ -53,7 +53,7 @@ body {
       right: 0;
       margin: 4.5% 10%;
       border: solid 2px rgba(181,202,223,1);
-      padding: 5px;
+      padding: 10px;
 }
 #navigatie_kleine_pagina .menu .streepje {
       background: rgba(181,202,223,1);
@@ -95,12 +95,15 @@ body {
       animation-duration: 0.5s;
       animation-fill-mode: both;
       animation-name: slideOutRight;
-}1
+}
 #navigatie_kleine_pagina .navkleinscherm.open {
       visibility: visible;
       animation-duration: 0.5s;
       animation-fill-mode: both;
       animation-name: slideInRight;
+}
+#navigatie_kleine_pagina .navkleinscherm.open .streepje {
+  background: rgba(255,255,255,1);
 }
 #navigatie_kleine_pagina .navkleinscherm li {
       list-style-type: none;
