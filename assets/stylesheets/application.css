@@ -48,7 +48,7 @@ body {
       cursor: pointer;
       z-index: 150;
       float: right;
-      position: static;
+      position: absolute;
       top: 0;
       right: 0;
       margin: 4.5% 5%;
