@@ -102,10 +102,7 @@ body {
       animation-fill-mode: both;
       animation-name: slideInRight;
 }
-#navigatie_kleine_pagina .navkleinscherm.open .menu {
-  border: none;
-}
-#navigatie_kleine_pagina .navkleinscherm.open .menu .streepje {
+#navigatie_kleine_pagina .navkleinscherm.open .streepje {
   background: rgba(255,255,255,1);
 }
 #navigatie_kleine_pagina .navkleinscherm li {
