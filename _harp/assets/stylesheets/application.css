@@ -319,6 +319,9 @@ footer img {
   main {
         width: 90%;
   }
+  h1.eerstetitel {
+        margin: 5% 0% 1% 0%;
+  }
   h1 {
         font-size: 1.1em;
   }
