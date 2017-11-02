@@ -84,9 +84,9 @@ body {
       position: fixed;
       top: 0;
       right: 0;
-      padding: 65px 7% 25px 0px;
+      padding: 50px 6% 10px 0px;
       width: 100%;
-      background: linear-gradient(to right, rgba(181,202,223,1), rgba(181,202,223,0.5));
+      background: linear-gradient(to right, rgba(181,202,223,0.5), rgba(181,202,223,1));
 }
 #navigatie_kleine_pagina .navkleinscherm:not(.open) {
       visibility: hidden;
@@ -102,7 +102,7 @@ body {
 }
 #navigatie_kleine_pagina .navkleinscherm li {
       list-style-type: none;
-      padding: 10px 25px;
+      padding: 5px 25px;
       text-align: right;
 }
 #navigatie_kleine_pagina .navkleinscherm li a {
