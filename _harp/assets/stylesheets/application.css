@@ -358,4 +358,7 @@ footer img {
         border-right: 1.5px solid rgba(255,255,255,1);
         padding: 4px 15px;
   }
+  .grid .goud {
+        height: 50px;
+  }
 }
