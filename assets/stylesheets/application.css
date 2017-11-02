@@ -252,14 +252,8 @@ footer img {
 }
 @media only screen and (max-width: 800px) {
   .contactform {
-        width: 205px;
-        height: 150px;
-        margin: 0%;
-        box-sizing: border-box;
-        overflow: hidden;
-  }
-  iframe {
-        margin: -105px 0 0 -17.5px;
+        width: 415px;
+        height: 450px;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -277,6 +271,12 @@ footer img {
   h2 {
         font-size: 1em;
   }
+}
+@media only screen and (max-width: 550px) {
+  .contactform {
+        width: 300px;
+  }
+
 }
 @media only screen and (max-width: 500px) {
   .banner_geen_letters {
