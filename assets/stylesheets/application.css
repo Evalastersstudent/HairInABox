@@ -289,6 +289,9 @@ footer img {
   .contactform {
         width: 300px;
   }
+  h2.titelfooter {
+        margin: 1% 5% 0% 5%;
+  }
   .grid .goud {
         height: 75px;
   }
