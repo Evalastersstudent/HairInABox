@@ -329,6 +329,10 @@ footer img {
         margin: 1.5% 0% 2.5% 0%;
         font-size: 0.8em;
   }
+  .contact img {
+        width: 25px;
+        margin: 0% 0.5%;
+  }
 }
 @media only screen and (max-width: 400px) {
   #navigatie_kleine_pagina .menu {
