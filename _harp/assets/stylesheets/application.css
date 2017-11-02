@@ -56,7 +56,7 @@ body {
       padding: 10px;
 }
 #navigatie_kleine_pagina .menu .streepje {
-      background: rgba(181,202,223,1);
+      background: rgba(255,255,255,1);
       transition: all 0.5s ease;
       width: 27.5px;
       height: 2px;
@@ -96,14 +96,14 @@ body {
       animation-fill-mode: both;
       animation-name: slideOutRight;
 }
+#navigatie_kleine_pagina .navkleinscherm:not(.open) .streepje {
+      background: rgba(181,202,223,1);
+}
 #navigatie_kleine_pagina .navkleinscherm.open {
       visibility: visible;
       animation-duration: 0.5s;
       animation-fill-mode: both;
       animation-name: slideInRight;
-}
-#navigatie_kleine_pagina .navkleinscherm.open .streepje {
-  background: rgba(255,255,255,1);
 }
 #navigatie_kleine_pagina .navkleinscherm li {
       list-style-type: none;
