@@ -291,3 +291,38 @@ footer img {
         font-size: 0.8em;
   }
 }
+@media only screen and (max-width: 400px) {
+  #navigatie_kleine_pagina .menu {
+        border: solid 1px rgba(181,202,223,1);
+        padding: 7.5px;
+  }
+  #navigatie_kleine_pagina .menu .streepje {
+        width: 22.5px;
+        height: 1px;
+  }
+  #navigatie_kleine_pagina .menu .middelstestreepje {
+        margin: 7px auto;
+  }
+  #navigatie_kleine_pagina .menu.open .bovenstestreepje {
+        margin: 7.5px 0px 0px 0px;
+        width: 30px;
+  }
+  #navigatie_kleine_pagina .menu.open .onderstestreepje {
+        margin: -17.5px 0px 0px 0px;
+        width: 30px;
+  }
+  #navigatie_kleine_pagina .navkleinscherm {
+        padding: 45px 4% 10px 0px;
+  }
+  #navigatie_kleine_pagina .navkleinscherm li {
+        padding: 3px 25px;
+  }
+  #navigatie_kleine_pagina .navkleinscherm li a {
+        border-right: 1.5px solid transparent;
+        font-size: 0.8em;
+  }
+  #navigatie_kleine_pagina .navkleinscherm li a:hover {
+        border-right: 1.5px solid rgba(255,255,255,1);
+        padding: 4px 15px;
+  }
+}
