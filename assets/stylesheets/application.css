@@ -289,7 +289,12 @@ footer img {
   .contactform {
         width: 300px;
   }
-
+  .grid .goud {
+        height: 75px;
+  }
+  .grid .zilver {
+        height: 50px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .banner_geen_letters {
