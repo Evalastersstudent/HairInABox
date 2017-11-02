@@ -249,6 +249,15 @@ footer img {
         margin: 1.5% 0% 2.5% 0%;
         font-size: 0.9em;
   }
+  .grid-item {
+        height: 50px;
+  }
+  .grid .goud {
+        height: 100px;
+  }
+  .grid .zilver {
+        height: 75px;
+  }
 }
 @media only screen and (max-width: 800px) {
   .contactform {
@@ -295,6 +304,9 @@ footer img {
         display: block;
         visibility: visible;
   }
+  main {
+        width: 90%;
+  }
   h1 {
         font-size: 1.1em;
   }
@@ -336,8 +348,5 @@ footer img {
   #navigatie_kleine_pagina .navkleinscherm li a:hover {
         border-right: 1.5px solid rgba(255,255,255,1);
         padding: 4px 15px;
-  }
-  main {
-        width: 95%;
   }
 }
