@@ -190,6 +190,19 @@ iframe {
   margin: 0 auto;
 }
 
+.pure-g {
+    text-align: center;
+    margin: 2.5% auto 5% auto;
+}
+.pure-u-1-2 {
+    margin: 2.5% 0% 0% 0%;
+}
+.pure-u-1-2 h3 {
+    font-size: 1.25em;
+    margin: 2.5% 2.5%;
+}
+
+
 
 
 @media only screen and (min-width: 768px) {

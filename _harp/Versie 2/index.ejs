@@ -7,6 +7,7 @@
 						<meta name="pinterest" content="nopin">
         		<link rel="stylesheet" type="text/css" href="assets/stylesheets/reset.css">
         		<link rel="stylesheet" type="text/css" href="assets/stylesheets/application.css">
+            <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
         		<link rel="shortcut icon" href="assets/Fotos/favicon.png"/>
         		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       </head>
@@ -90,9 +91,61 @@
                               Verkooppunten
                         </h1>
                         <p>
-                              De befaamde 'Message In A Box Doosjes' zijn vanaf nu in verschillende kapperszaken te verkrijgen. Ook bij enkele van onze sponsors zijn onze doosjes te verkrijgen.<br><br>Zoek een locatie bij jou in de buurt en ga er langs om jouw doosjes te kopen. Natuurlijk raden wij ook aan je haar er te laten verzorgen.
+                              De befaamde 'Message In A Box Doosjes' zijn vanaf nu in verschillende kapperszaken te verkrijgen. Ook bij enkele van onze sponsors zijn onze doosjes te verkrijgen.<br>Zoek een locatie bij jou in de buurt en ga er langs om jouw doosjes te kopen. Natuurlijk raden wij ook aan je haar er te laten verzorgen.
                         </p>
                         <div id="map"></div>
+                        <div class="pure-g">
+                              <div class="Froe_Loe pure-u-1-2">
+                                <h3>
+                                  <a href="">Froe Loe</a>
+                                </h3>
+                                <p>
+                                  Kerkstraat 52<br>
+                                  2370 Arendonk<br>
+                                  +32 472 64 29 22
+                                </p>
+                              </div>
+                              <div class="Kapsalon_Pascale pure-u-1-2">
+                                <h3>
+                                  <a href="">Kapsalon Pascale</a>
+                                </h3>
+                                <p>
+                                  Kuiperkensstraat 48<br>
+                                  2370 Arendonk<br>
+                                  +32 478 82 90 75
+                                </p>
+                              </div>
+                              <div class="Kapsalon_Exclusief pure-u-1-2">
+                                <h3>
+                                  <a href="">Kapsalon Exclusief</a>
+                                </h3>
+                                <p>
+                                  Vlakke Velden 41<br>
+                                  2270 Herenthout<br>
+                                  +32 14 51 22 71
+                                </p>
+                              </div>
+                              <div class="Ronny_T_Kapperke pure-u-1-2">
+                                <h3>
+                                  <a href="">Ronny &#39;T Kapperke</a>
+                                </h3>
+                                <p>
+                                  Molenstraat 43<br>
+                                  2550 Kontich<br>
+                                  +32 34 58 34 15
+                                </p>
+                              </div>
+                              <div class="Monkey_s pure-u-1-2">
+                                <h3>
+                                  <a href="">Monkey&#39;s</a>
+                                </h3>
+                                <p>
+                                  Turnhoutsebaan 36<br>
+                                  2100 Deurne<br>
+                                  +32 33 44 43 04
+                                </p>
+                              </div>
+                        </div>
                   </div>
                   <div id="contact">
                         <h1>
@@ -140,77 +193,13 @@
                         <a href="https://dewarmsteweek.stubru.be/goededoelen/hair-in-a-box"><img src="assets/Fotos/Contact/hib_warmsteweek.png" alt="hib_warmsteweek"></a>
                   </div>
             </footer>
-            <script>
-              function initMap() {
-                map = new google.maps.Map(document.getElementById('map'), {
-                  center: {lat: 51.245, lng: 4.76},
-                  zoom: 10,
-                  disableDefaultUI: true,
-                  zoomControl: true,
-                  scaleControl: false,
-                  rotateControl: false,
-                  cursor: 'context-menu'
-                });
-
-                var verkooppunten = [
-                  ['Froe Loe',
-                  51.32, 5.08, 1,
-                  'Kerkstraat 52, 2370 Arendonk',
-                  '+32 472 64 29 22'],
-                  ['Kapsalon Pascale',
-                  51.32, 5.07, 2,
-                  'Kuiperkensstraat 48, 2370 Arendonk',
-                  '+32 478 82 90 75'],
-                  ['Kapsalon exclusief',
-                  51.14, 4.76, 3,
-                  'Vlakke Velden 41, 2270 Herenthout',
-                  '+32 14 51 22 71'],
-                  ['Ronny &#39;T Kapperke',
-                  51.14 ,4.44, 4,
-                  'Molenstraat 43, 2550 Kontich',
-                  '+32 34 58 34 15'],
-                  ['Monkey&#39;s',
-                  51.22, 4.46, 5,
-                  'Turnhoutsebaan 36, 2100 Deurne',
-                  '+32 33 44 43 04'],
-                ];
-
-                for (var i = 0; i < verkooppunten.length; i++) {
-                      var verkooppunt = verkooppunten[i];
-                      var contentString = '<h1 id="title">'+verkooppunt[0]+'</h1>'+'<p id="address">'+verkooppunt[4]+'<br>'+verkooppunt[5]+'</p>'+'<p id="phonenumber">'+verkooppunt[6]+'</p>';
-
-                      var infowindow = new google.maps.InfoWindow({
-                        content: contentString
-                      });
-                }
-
-                function setMarkers(map) {
-                  var image = 'assets/Fotos/Marker.png';
-                  for (var i = 0; i < verkooppunten.length; i++) {
-                    var verkooppunt = verkooppunten[i];
-                    var marker = new google.maps.Marker({
-                      position: {lat: verkooppunt[1], lng: verkooppunt[2]},
-                      map: map,
-                      icon: image,
-                      animation: google.maps.Animation.DROP,
-                      title: verkooppunt[0],
-                      zIndex: verkooppunt[3]
-                    });
-                  }
-                  marker[i].addListener('click', function() {
-                    infowindow.open(map, marker);
-                  });
-                }
-
-                setMarkers(map);
-              }
-            </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6VxW4OmXRlUwtSORBKIWk_WGgZthP3bo&callback=initMap" async defer></script>
             <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
             <script>window.jQuery || document.write('<script src="assets/javascript/jquery-3.1.1.min.js"><\/script>')</script>
       			<script src="assets/javascript/jquery.scrollTo.min.js"></script>
       			<script src="assets/javascript/jquery.localScroll.min.js"></script>
             <script src='assets/javascript/script.js'></script>
+            <script src='assets/javascript/map.js'></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6VxW4OmXRlUwtSORBKIWk_WGgZthP3bo&callback=initMap" async defer></script>
             <script src='assets/javascript/contact.js'></script>
       </body>
 </html>
