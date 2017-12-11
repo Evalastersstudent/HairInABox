@@ -29,13 +29,18 @@ function initMap() {
         title: verkooppunt[0],
         zIndex: verkooppunt[3]
       });
-       var infowindow = new google.maps.InfoWindow({
-        content: '<h1 id="title">'+verkooppunt[0]+'</h1>'+'<p id="address">'+verkooppunt[4]+'<br>'+verkooppunt[5]+'</p>'+'<p id="phonenumber">'+verkooppunt[6]+'</p>'
-      });
     }
-    marker.onclick = function() {
-      infowindow.open(map, marker);
-    }
+    var content = '<h1 id="title">'+verkooppunt[0]+'</h1>'+'<p id="address">'+verkooppunt[4]+'</p>'+'<p id="phonenumber">'+verkooppunt[5]+'</p>'
+
+var infowindow = new google.maps.InfoWindow()
+
+google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){
+    return function() {
+       infowindow.setContent(content);
+       infowindow.open(map,marker);
+    };
+})(marker,content,infowindow));
+
   }
 
   setMarkers(map);
