@@ -1,0 +1,428 @@
+* { box-sizing: border-box; }
+
+body {
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      font-weight: 300;
+      color: rgba(50,50,50,1);
+      font-size: 1em;
+      line-height: 1.5em;
+}
+#banner_top_pagina{
+      width: 100%;
+}
+.banner_grote_letters {
+  display: none;
+  visibility: hidden;
+}
+.banner_geen_letters {
+  display: none;
+  visibility: hidden;
+}
+#navigatie_grote_pagina {
+      margin: 1% auto 0% auto;
+      display: block;
+      visibility: visible;
+}
+#navigatie_grote_pagina ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 1%;
+      border: 5px solid rgba(181,202,223,0);
+}
+#navigatie_grote_pagina ul li:hover {
+      animation: hovernav 1s;
+      border: 5px solid rgba(181,202,223,1);
+}
+#navigatie_grote_pagina ul li a {
+      text-decoration: none;
+      color: rgba(50,50,50,1);
+}
+
+
+#navigatie_kleine_pagina {
+      display: none;
+      visibility: hidden;
+}
+#navigatie_kleine_pagina .menu {
+      cursor: pointer;
+      z-index: 150;
+      float: right;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 4.5% 5%;
+      border: solid 2px rgba(181,202,223,1);
+      padding: 10px;
+}
+#navigatie_kleine_pagina .menu .streepje {
+      background: rgba(255,255,255,1);
+      transition: all 0.5s ease;
+      width: 27.5px;
+      height: 2px;
+      z-index: 175;
+}
+#navigatie_kleine_pagina .menu .bovenstestreepje, #navigatie_kleine_pagina .menu .onderstestreepje {
+      margin: 0 auto;
+}
+#navigatie_kleine_pagina .menu .middelstestreepje {
+      margin: 7.5px auto;
+}
+#navigatie_kleine_pagina .menu.open .bovenstestreepje {
+      transform: rotate(45deg);
+      margin: 10px 0px 0px 0px;
+      width: 35px;
+}
+#navigatie_kleine_pagina .menu.open .middelstestreepje {
+      opacity: 0;
+}
+#navigatie_kleine_pagina .menu.open .onderstestreepje {
+      transform: rotate(-45deg);
+      margin: -20px 0px 0px 0px;
+      width: 35px;
+}
+#navigatie_kleine_pagina .navkleinscherm {
+      z-index: 125;
+      position: fixed;
+      top: 0;
+      right: 0;
+      padding: 50px 6% 10px 0px;
+      width: 100%;
+      background: linear-gradient(to right, rgba(181,202,223,0.75), rgba(181,202,223,1));
+}
+#navigatie_kleine_pagina .navkleinscherm:not(.open) {
+      visibility: hidden;
+      animation-duration: 0.5s;
+      animation-fill-mode: both;
+      animation-name: slideOutRight;
+}
+#navigatie_kleine_pagina .navkleinscherm:not(.open) .streepje {
+      background: rgba(181,202,223,1);
+}
+#navigatie_kleine_pagina .navkleinscherm.open {
+      visibility: visible;
+      animation-duration: 0.5s;
+      animation-fill-mode: both;
+      animation-name: slideInRight;
+}
+#navigatie_kleine_pagina .navkleinscherm li {
+      list-style-type: none;
+      padding: 4.5px 25px;
+      text-align: right;
+}
+#navigatie_kleine_pagina .navkleinscherm li a {
+      color: rgba(255, 255, 255, 1);
+      text-decoration: none;
+      border-right: 2.5px solid transparent;
+      padding: 0px;
+      transition: border 0.5s, padding 0.5s;
+      font-size: 0.9em;
+}
+#navigatie_kleine_pagina .navkleinscherm li a:hover {
+      border-right: 2.5px solid rgba(255,255,255,1);
+      padding: 5px 15px;
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0%);
+    visibility: visible;
+  }
+}
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+}
+
+
+
+main {
+      width: 50%;
+      text-align: left;
+      margin: 0% auto 5% auto;
+}
+h1 {
+      font-size: 2em;
+      margin: 5% 0% 1% 0%;
+      border: 5px solid rgba(181,202,223,1);
+      padding: 2.5%;
+      display: inline-block;
+}
+h1.eerstetitel {
+      margin: 2.5% 0% 1% 0%;
+}
+h1 a {
+      color: rgba(50,50,50,1);
+      text-decoration: none;
+}
+h2 {
+      font-size: 1.25em;
+      margin: 4% 0% 0% 0%;
+}
+p {
+      margin: 1.5% 0% 2.5% 0%;
+}
+.contactform {
+      width: 620px;
+      height: 450px;
+      margin: 0%;
+      box-sizing: border-box;
+      overflow: hidden;
+}
+iframe {
+      margin: -320px 0 0 -50px;
+}
+
+
+
+#map {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .map {
+    height: 300px;
+  }
+
+  .map__legend {
+    display: block;
+    width: 192px;
+    height: auto;
+    overflow-y: auto;
+    padding: 5px 10px;
+    margin: 0 0 5px;
+    background: #fff;
+    color: rgba(50,50,50,1);
+    line-height: 25px;
+    border: 1px solid #bbb;
+  }
+
+  .map > .map__legend {
+    display: none;
+  }
+
+  .map__legend a {
+    color: rgba(50,50,50,1);
+  }
+
+  .map__legend a:hover {
+    color: #ff6600;
+  }
+
+  .map__frame {
+    min-height: 100%;
+    background: #fff;
+  }
+
+  .map__print {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+
+footer {
+      background-color: rgba(181,202,223,1);
+      margin: 2.5% auto 0% auto;
+      padding: 2.5% 2.5% 1% 2.5%;
+      width: 100%;
+}
+h2.titelfooter {
+      margin: 1% 0% 0% 0%;
+}
+footer img {
+      max-width: 100%;
+      display: inline-block;
+}
+.grid {
+      max-width: 80%;
+      margin: 1.5% auto;
+}
+.grid:after {
+      content: '';
+      display: block;
+      clear: both;
+}
+.grid-item {
+      display: inline-block;
+      width: auto;
+      margin: 2.5%;
+      height: 75px;
+}
+.grid .goud {
+      height: 125px;
+}
+.grid .zilver {
+      height: 100px;
+}
+.grid-item img {
+      max-width: 100%;
+      max-height: 100%;
+      background-size: cover;
+}
+.contact img {
+      width: 50px;
+      margin: 0% 0.5%;
+      display: inline-block;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  main {
+        width: 70%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #navigatie_grote_pagina ul li:hover {
+        border: 3.5px solid rgba(181,202,223,1);
+  }
+  h1 {
+        font-size: 1.5em;
+        padding: 2%;
+        margin: 3.5% 0% 1% 0%;
+        border: 3.5px solid rgba(181,202,223,1);
+  }
+  h2 {
+        font-size: 1.1em;
+        margin: 4% 0% 0% 0%;
+  }
+  p {
+        margin: 1.5% 0% 2.5% 0%;
+        font-size: 0.9em;
+  }
+  .grid-item {
+        height: 50px;
+  }
+  .grid .goud {
+        height: 100px;
+  }
+  .grid .zilver {
+        height: 75px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .contactform {
+        width: 415px;
+        height: 450px;
+  }
+  .grid {
+        max-width: 90%;
+        margin: 1.5% auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .banner_grote_letters {
+        display: block;
+        visibility: visible;
+  }
+  .banner_kleine_letters {
+        display: none;
+        visibility: hidden;
+  }
+  h1 {
+        font-size: 1.25em;
+  }
+  h2 {
+        font-size: 1em;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .contactform {
+        width: 300px;
+  }
+  h2.titelfooter {
+        margin: 1% 5% 0% 5%;
+  }
+  .grid .goud {
+        height: 75px;
+  }
+  .grid .zilver {
+        height: 50px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .banner_geen_letters {
+        display: block;
+        visibility: visible;
+  }
+  .banner_grote_letters {
+        display: none;
+        visibility: hidden;
+  }
+  #navigatie_grote_pagina {
+        display: none;
+        visibility: hidden;
+  }
+  #navigatie_kleine_pagina {
+        display: block;
+        visibility: visible;
+  }
+  main {
+        width: 90%;
+  }
+  h1.eerstetitel {
+        margin: 5% 0% 1% 0%;
+  }
+  h1 {
+        font-size: 1.1em;
+  }
+  p {
+        margin: 1.5% 0% 2.5% 0%;
+        font-size: 0.8em;
+  }
+  .contact img {
+        width: 40px;
+        margin: 0% 0.5%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #navigatie_kleine_pagina .menu {
+        border: solid 1px rgba(181,202,223,1);
+        padding: 7.5px;
+  }
+  #navigatie_kleine_pagina .menu .streepje {
+        width: 22.5px;
+        height: 1px;
+  }
+  #navigatie_kleine_pagina .menu .middelstestreepje {
+        margin: 7px auto;
+  }
+  #navigatie_kleine_pagina .menu.open .bovenstestreepje {
+        margin: 7.5px 0px 0px 0px;
+        width: 30px;
+  }
+  #navigatie_kleine_pagina .menu.open .onderstestreepje {
+        margin: -17.5px 0px 0px 0px;
+        width: 30px;
+  }
+  #navigatie_kleine_pagina .navkleinscherm {
+        padding: 45px 4% 10px 0px;
+  }
+  #navigatie_kleine_pagina .navkleinscherm li {
+        padding: 3px 25px;
+  }
+  #navigatie_kleine_pagina .navkleinscherm li a {
+        border-right: 1.5px solid transparent;
+        font-size: 0.8em;
+  }
+  #navigatie_kleine_pagina .navkleinscherm li a:hover {
+        border-right: 1.5px solid rgba(255,255,255,1);
+        padding: 4px 15px;
+  }
+  .grid .goud {
+        height: 50px;
+  }
+}
