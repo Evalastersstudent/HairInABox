@@ -144,11 +144,39 @@
               var map;
               function initMap() {
                 map = new google.maps.Map(document.getElementById('map'), {
-                  center: {lat: 51.245, lng: 4.75},
+                  center: {lat: 51.23, lng: 4.76},
                   zoom: 10,
                   disableDefaultUI: true,
-                  zoomControl: false,
-                  scaleControl: true
+                  zoomControl: true,
+                  scaleControl: false,
+                  rotateControl: false
+                });
+
+                var image = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+                var Froe_Loe = new google.maps.Marker({
+                  position: {lat: 51.32, lng: 5.08},
+                  map: map,
+                  icon: image
+                });
+                var Kapsalon_Pascale = new google.maps.Marker({
+                  position: {lat: 51.32, lng: 5.07},
+                  map: map,
+                  icon: image
+                });
+                var Kapsalon_Exclusief = new google.maps.Marker({
+                  position: {lat: 51.14, lng: 4.76},
+                  map: map,
+                  icon: image
+                });
+                var Ronny_T_Kapperke = new google.maps.Marker({
+                  position: {lat: 51.14, lng: 4.44},
+                  map: map,
+                  icon: image
+                });
+                var Monkey_S = new google.maps.Marker({
+                  position: {lat: 51.22, lng: 4.46},
+                  map: map,
+                  icon: image
                 });
 
                 marker.addListener('click', function() {
