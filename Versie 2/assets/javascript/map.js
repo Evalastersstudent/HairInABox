@@ -26,7 +26,7 @@ function initMap() {
         });
   }
 
-  function setMarkers(map) {
+  function setMarkers(map, marker) {
     var image = 'assets/Fotos/Marker.png';
     for (var i = 0; i < verkooppunten.length; i++) {
       var verkooppunt = verkooppunten[i];
@@ -39,7 +39,7 @@ function initMap() {
         zIndex: verkooppunt[3]
       });
     }
-    marker[i].addListener('click', function() {
+    marker.addEventListener("click", function() {
       infowindow.open(map, marker);
     });
   }
