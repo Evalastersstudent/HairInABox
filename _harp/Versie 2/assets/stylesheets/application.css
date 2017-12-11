@@ -201,6 +201,9 @@ iframe {
     font-size: 1.25em;
     margin: 2.5% 2.5%;
 }
+.pure-u-1-2 h3 a {
+  color: rgba(50,50,50,1);
+}
 
 
 
