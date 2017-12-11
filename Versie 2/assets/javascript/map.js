@@ -17,15 +17,6 @@ function initMap() {
     ['Monkey&#39;s', 51.22, 4.46, 5, 'Turnhoutsebaan 36, 2100 Deurne', '+32 33 44 43 04'],
   ];
 
-  for (var i = 0; i < verkooppunten.length; i++) {
-        var verkooppunt = verkooppunten[i];
-        var contentString = '<h1 id="title">'+verkooppunt[0]+'</h1>'+'<p id="address">'+verkooppunt[4]+'<br>'+verkooppunt[5]+'</p>'+'<p id="phonenumber">'+verkooppunt[6]+'</p>';
-
-        var infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });
-  }
-
   function setMarkers(map, marker) {
     var image = 'assets/Fotos/Marker.png';
     for (var i = 0; i < verkooppunten.length; i++) {
@@ -38,10 +29,13 @@ function initMap() {
         title: verkooppunt[0],
         zIndex: verkooppunt[3]
       });
+       var infowindow = new google.maps.InfoWindow({
+        content: '<h1 id="title">'+verkooppunt[0]+'</h1>'+'<p id="address">'+verkooppunt[4]+'<br>'+verkooppunt[5]+'</p>'+'<p id="phonenumber">'+verkooppunt[6]+'</p>'
+      });
     }
-    marker.addEventListener("click", function() {
+    marker.onclick = function() {
       infowindow.open(map, marker);
-    });
+    }
   }
 
   setMarkers(map);
