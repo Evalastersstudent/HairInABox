@@ -141,6 +141,45 @@
                   </div>
             </footer>
             <script>
+              var verkooppunten = [
+                ['Froe Loe',
+                'Kerkstraat 52, 2370 Arendonk',
+                '+32 472 64 29 22',
+                51.32, 5.08, 1],
+                ['Kapsalon Pascale',
+                'Kuiperkensstraat 48, 2370 Arendonk',
+                '+32 478 82 90 75',
+                51.32, 5.07, 2],
+                ['Kapsalon exclusief',
+                'Vlakke Velden 41, 2270 Herenthout',
+                '+32 14 51 22 71',
+                51.14, 4.76, 3],
+                ['Ronny &#39;T Kapperke',
+                'Molenstraat 43, 2550 Kontich',
+                '+32 34 58 34 15',
+                51.14 ,4.44, 4],
+                ['Monkey&#39;s',
+                'Turnhoutsebaan 36, 2100 Deurne',
+                '+32 33 44 43 04',
+                51.22, 4.46, 5],
+              ];
+
+              function setMarkers(map) {
+                var image = 'assets/Fotos/Marker.png';
+                for (var i = 0; i < verkooppunten.length; i++) {
+                  var verkooppunt = verkooppunten[i];
+                  var marker = new google.maps.Marker({
+                    position: {lat: verkooppunt[4], lng: verkooppunt[5]},
+                    map: map,
+                    icon: image,
+                    draggable: true,
+                    animation: google.maps.Animation.DROP,
+                    title: verkooppunt[0],
+                    zIndex: verkooppunt[6]
+                  });
+                }
+              }
+
               function initMap() {
                 map = new google.maps.Map(document.getElementById('map'), {
                   center: {lat: 51.23, lng: 4.76},
@@ -152,28 +191,29 @@
                 });
 
                 setMarkers(map);
-              }
 
-              var verkooppunten = [
-                ['Froe Loe', 51.32, 5.08, 1],
-                ['Kapsalon Pascale', 51.32, 5.07, 2],
-                ['Kapsalon Exclusief', 51.14, 4.76, 3],
-                ['Ronny &#39;T Kapperke', 51.14, 4.44, 4],
-                ['Monkey&#39;s', 51.22, 4.46, 5]
-              ];
+                var infowindow = new google.maps.InfoWindow();
+                var service = new google.maps.places.PlacesService(map);
 
-              function setMarkers(map) {
-                var image = 'assets/Fotos/Marker.png';
-                for (var i = 0; i < verkooppunten.length; i++) {
-                  var verkooppunt = verkooppunten[i];
-                  var marker = new google.maps.Marker({
-                    position: {lat: verkooppunt[1], lng: verkooppunt[2]},
-                    map: map,
-                    icon: image,
-                    title: verkooppunt[0],
-                    zIndex: verkooppunt[3]
-                  });
-                }
+                service.getDetails({
+                  title: verkooppunt[0],
+                  address: verkooppunt[1] + ', ' + verkooppunt[2],
+                  phonenumber: verkooppunt[3]
+                },
+                function(place, status) {
+                  if (status === google.maps.places.PlacesServiceStatus.OK) {
+                    var marker = new google.maps.Marker({
+                      map: map,
+                      position: place.geometry.location
+                    });
+                    google.maps.event.addListener(marker, 'click', function() {
+                      infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+                        'Place ID: ' + place.place_id + '<br>' +
+                        place.formatted_address + '</div>');
+                      infowindow.open(map, this);
+                    });
+                  }
+                });
               }
             </script>
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6VxW4OmXRlUwtSORBKIWk_WGgZthP3bo&callback=initMap" async defer></script>
