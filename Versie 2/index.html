@@ -148,7 +148,8 @@
                   disableDefaultUI: true,
                   zoomControl: true,
                   scaleControl: false,
-                  rotateControl: false
+                  rotateControl: false,
+                  cursor: 'context-menu'
                 });
 
                 var verkooppunten = [
@@ -196,7 +197,7 @@
                       zIndex: verkooppunt[3]
                     });
                   }
-                  marker.addListener('click', function() {
+                  marker[i].addListener('click', function() {
                     infowindow.open(map, marker);
                   });
                 }
